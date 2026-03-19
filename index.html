@@ -4,11 +4,183 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The True Love Series</title>
-    <meta http-equiv="refresh" content="0; url=/pages/index.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/global.css" />
   </head>
   <body>
-    <p>Redirecting to the main page...</p>
+    <main class="page">
+      <header class="header">
+        <h1 class="title">The True Love Series</h1>
+        <p class="subtitle">The Long-Earned Journey to Happiness Forever</p>
+      </header>
+
+      <section class="grid" aria-label="Game entry points">
+        <!-- The Side Quest -->
+        <a
+          class="card"
+          href="https://the-side-quest.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="icon icon--sidequest" aria-hidden="true">
+            <svg
+              width="140"
+              height="140"
+              viewBox="0 0 140 140"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="g1"
+                  x1="20"
+                  y1="20"
+                  x2="120"
+                  y2="130"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#7C3AED" />
+                  <stop offset="1" stop-color="#EC4899" />
+                </linearGradient>
+              </defs>
+              <rect x="16" y="16" width="108" height="108" rx="24" fill="url(#g1)" />
+              <!-- Heart icon -->
+              <g transform="translate(70 70) scale(0.78) translate(-70 -70)">
+                <path
+                  d="M70 124.5417 l -8.4583 -7.7 C 32.2 89.6 11.6667 71.6333 11.6667 49.5833 11.6667 31.6167 25.7833 17.5 43.75 17.5 c 10.15 0 19.8917 4.725 26.25 12.1917 C 76.3583 22.225 86.1 17.5 96.25 17.5 114.2167 17.5 128.3333 31.6167 128.3333 49.5833 c 0 22.05 -20.5333 40.0167 -49.875 67.3167 L 70 124.5417 z"
+                  fill="rgba(255,255,255,0.18)"
+                  stroke="rgba(255,255,255,0.88)"
+                  stroke-width="2.8"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">The Side Quest</h2>
+            <span class="chip">Now Playing</span>
+          </div>
+          <p class="card-subtitle">
+            The princess realizes that there is only one quest that really matters.
+          </p>
+        </a>
+
+        <!-- The Spring Countdown -->
+        <a
+          class="card"
+          href="https://the-spring-countdown.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="icon icon--spring" aria-hidden="true">
+            <svg
+              width="140"
+              height="140"
+              viewBox="0 0 140 140"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="g2"
+                  x1="18"
+                  y1="18"
+                  x2="122"
+                  y2="128"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#EC4899" />
+                  <stop offset="1" stop-color="#7C3AED" />
+                </linearGradient>
+              </defs>
+              <rect x="16" y="16" width="108" height="108" rx="24" fill="url(#g2)" />
+              <!-- Heart icon -->
+              <g transform="translate(70 70) scale(0.78) translate(-70 -70)">
+                <path
+                  d="M70 124.5417 l -8.4583 -7.7 C 32.2 89.6 11.6667 71.6333 11.6667 49.5833 11.6667 31.6167 25.7833 17.5 43.75 17.5 c 10.15 0 19.8917 4.725 26.25 12.1917 C 76.3583 22.225 86.1 17.5 96.25 17.5 114.2167 17.5 128.3333 31.6167 128.3333 49.5833 c 0 22.05 -20.5333 40.0167 -49.875 67.3167 L 70 124.5417 z"
+                  fill="rgba(255,255,255,0.14)"
+                  stroke="rgba(255,255,255,0.86)"
+                  stroke-width="2.9"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Spring Arrives</h2>
+            <span class="chip">Now Playing</span>
+          </div>
+          <p class="card-subtitle">
+            The prince realizes that there is only one quest that really matters.
+          </p>
+        </a>
+
+        <!-- Come soon placeholders -->
+        <div
+          class="card card--disabled"
+          role="group"
+          aria-label="Come soon placeholder 1"
+        >
+          <div class="icon icon--soon" aria-hidden="true">
+            <svg
+              width="140"
+              height="140"
+              viewBox="0 0 140 140"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="g3"
+                  x1="18"
+                  y1="18"
+                  x2="122"
+                  y2="128"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#7C3AED" />
+                  <stop offset="1" stop-color="#EC4899" />
+                </linearGradient>
+              </defs>
+              <rect x="16" y="16" width="108" height="108" rx="24" fill="url(#g3)" />
+              <!-- Heart icon -->
+              <g transform="translate(70 70) scale(0.78) translate(-70 -70)">
+                <path
+                  d="M70 124.5417 l -8.4583 -7.7 C 32.2 89.6 11.6667 71.6333 11.6667 49.5833 11.6667 31.6167 25.7833 17.5 43.75 17.5 c 10.15 0 19.8917 4.725 26.25 12.1917 C 76.3583 22.225 86.1 17.5 96.25 17.5 114.2167 17.5 128.3333 31.6167 128.3333 49.5833 c 0 22.05 -20.5333 40.0167 -49.875 67.3167 L 70 124.5417 z"
+                  fill="rgba(255,255,255,0.10)"
+                  stroke="rgba(236,72,153,0.62)"
+                  stroke-width="2.8"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">The Next Chapters</h2>
+            <span class="chip chip--ghost">More Games Soon</span>
+          </div>
+          <p class="card-subtitle">
+            The saga continues — magical dates, cute babies, and the adventures of many lifetimes...
+          </p>
+        </div>
+      </section>
+
+      <footer class="footnote" role="contentinfo">To My Handsome Soulmate Across All Spacetimes; Wherever and Whoever You Are, I Know We're Finding Each Other Soon</footer>
+    </main>
   </body>
 </html>
 
