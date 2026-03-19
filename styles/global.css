@@ -275,6 +275,71 @@ body {
   color: var(--muted);
 }
 
+@media (max-width: 560px) {
+  .page {
+    padding: 28px 14px 30px;
+  }
+
+  .header {
+    gap: 10px;
+    margin-bottom: 34px;
+  }
+
+  .title {
+    font-size: clamp(2.05rem, 9vw, 2.8rem);
+    line-height: 1.08;
+  }
+
+  .subtitle {
+    font-size: 0.96rem;
+    max-width: 32ch;
+    padding-bottom: 8px;
+  }
+
+  .grid {
+    gap: 14px;
+  }
+
+  .card {
+    min-height: 0;
+    padding: 16px 16px 14px;
+    gap: 10px;
+    border-radius: 18px;
+  }
+
+  .icon svg {
+    width: min(44vw, 144px);
+  }
+
+  .card-body {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-subtitle {
+    font-size: 0.9rem;
+    max-width: 100%;
+    padding-top: 2px;
+    padding-bottom: 4px;
+  }
+
+  .chip {
+    font-size: 0.84rem;
+    padding: 7px 10px;
+    white-space: normal;
+  }
+
+  .footnote {
+    margin-top: 26px;
+    font-size: 1.12rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .card,
   .card::before,
