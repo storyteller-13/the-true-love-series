@@ -365,3 +365,17 @@ body {
   font-weight: 600;
 }
 
+.footnote a,
+.footnote a:visited {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.45);
+  text-underline-offset: 0.18em;
+}
+
+.footnote a:hover,
+.footnote a:focus-visible {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration-color: rgba(255, 255, 255, 0.65);
+}
+
